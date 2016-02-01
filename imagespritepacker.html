@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Sprite Packer</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #ImageOne {
+            background: url("test1.jpg") no-repeat;
+            background-size: contain;
+            width: 400px;
+            height: 200px;
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        }
+        #ImageTwo {
+            background: url("test2.jpg") no-repeat;
+            background-size: 100%;
+            width: 300px;
+            height: 400px;
+            position: fixed;
+            top: 200px;
+            left: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="ImageOne"></div>
+    <div id="ImageTwo"></div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="imagespritepacker.js?v=1.0.0"></script>
+    <script>
+        $(window).load(function() {
+            ImageSpritePacker("*");
+        })
+    </script>
+</body>
+</html>
