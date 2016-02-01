@@ -1,6 +1,8 @@
 # Image Sprite Packer v1.0.0
 ImageSpritePacker is a jQuery plugin that converts all your images into a single spritesheet and then positioned correctly so it doesn't interferred with your own CSS styles.
 
+Test it out live here: https://thegameview.com/imagespritepacker/
+
 ## How to Use (this plugin requires jQuery):
 1. Include the `imagespritepacker.js` after importing jQuery.
 2. To run the process of converting all images and positioning all at once, call `ImageSpritePacker("*");` for example in the Ready function or when you're done loading everything.
